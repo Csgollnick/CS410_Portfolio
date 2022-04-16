@@ -1,0 +1,110 @@
+   0x000000000000108b <+0>:     push   %rbp
+   0x000000000000108c <+1>:     mov    %rsp,%rbp
+
+   0x000000000000108f <+4>:     lea    0x4c2(%rip),%rsi        # 0x1558
+   0x0000000000001096 <+11>:    lea    0x201003(%rip),%rdi        # 0x2020a0 <_ZSt4cout@@GLIBCXX_3.4>
+   0x000000000000109d <+18>:    callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x00000000000010a2 <+23>:    mov    %rax,%rdx
+   0x00000000000010a5 <+26>:    mov    0x200f24(%rip),%rax        # 0x201fd0
+   0x00000000000010ac <+33>:    mov    %rax,%rsi
+   0x00000000000010af <+36>:    mov    %rdx,%rdi
+   0x00000000000010b2 <+39>:    callq  0xca0 <_ZNSolsEPFRSoS_E@plt>
+   0x00000000000010b7 <+44>:    lea    0x4de(%rip),%rsi        # 0x159c
+   0x00000000000010be <+51>:    lea    0x200fdb(%rip),%rdi        # 0x2020a0 <_ZSt4cout@@GLIBCXX_3.4>
+   0x00000000000010c5 <+58>:    callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x00000000000010ca <+63>:    lea    0x200f3f(%rip),%rsi        # 0x202010 <name1>
+   0x00000000000010d1 <+70>:    mov    %rax,%rdi
+   0x00000000000010d4 <+73>:    callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x00000000000010d9 <+78>:    lea    0x4c0(%rip),%rsi        # 0x15a0
+   0x00000000000010e0 <+85>:    mov    %rax,%rdi
+   0x00000000000010e3 <+88>:    callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x00000000000010e8 <+93>:    mov    %rax,%rdx
+   0x00000000000010eb <+96>:    mov    0x200f6f(%rip),%eax        # 0x202060 <num1>
+   0x00000000000010f1 <+102>:   mov    %eax,%esi
+   0x00000000000010f3 <+104>:   mov    %rdx,%rdi
+   0x00000000000010f6 <+107>:   callq  0xd00 <_ZNSolsEi@plt>
+   0x00000000000010fb <+112>:   mov    %rax,%rdx
+   0x00000000000010fe <+115>:   mov    0x200ecb(%rip),%rax        # 0x201fd0
+   0x0000000000001105 <+122>:   mov    %rax,%rsi
+   0x0000000000001108 <+125>:   mov    %rdx,%rdi
+   0x000000000000110b <+128>:   callq  0xca0 <_ZNSolsEPFRSoS_E@plt>
+   0x0000000000001110 <+133>:   lea    0x49b(%rip),%rsi        # 0x15b2
+   0x0000000000001117 <+140>:   lea    0x200f82(%rip),%rdi        # 0x2020a0 <_ZSt4cout@@GLIBCXX_3.4>
+   0x000000000000111e <+147>:   callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000001123 <+152>:   lea    0x200ef6(%rip),%rsi        # 0x202020 <name2>
+   0x000000000000112a <+159>:   mov    %rax,%rdi
+   0x000000000000112d <+162>:   callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000001132 <+167>:   lea    0x467(%rip),%rsi        # 0x15a0
+   0x0000000000001139 <+174>:   mov    %rax,%rdi
+   0x000000000000113c <+177>:   callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000001141 <+182>:   mov    %rax,%rdx
+   0x0000000000001144 <+185>:   mov    0x200f1a(%rip),%eax        # 0x202064 <num2>
+   0x000000000000114a <+191>:   mov    %eax,%esi
+   0x000000000000114c <+193>:   mov    %rdx,%rdi
+   0x000000000000114f <+196>:   callq  0xd00 <_ZNSolsEi@plt>
+   0x0000000000001154 <+201>:   mov    %rax,%rdx
+   0x0000000000001157 <+204>:   mov    0x200e72(%rip),%rax        # 0x201fd0
+   0x000000000000115e <+211>:   mov    %rax,%rsi
+   0x0000000000001161 <+214>:   mov    %rdx,%rdi
+   0x0000000000001164 <+217>:   callq  0xca0 <_ZNSolsEPFRSoS_E@plt>
+   0x0000000000001169 <+222>:   lea    0x446(%rip),%rsi        # 0x15b6
+   0x0000000000001170 <+229>:   lea    0x200f29(%rip),%rdi        # 0x2020a0 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000001177 <+236>:   callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x000000000000117c <+241>:   lea    0x200ead(%rip),%rsi        # 0x202030 <name3>
+   0x0000000000001183 <+248>:   mov    %rax,%rdi
+   0x0000000000001186 <+251>:   callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x000000000000118b <+256>:   lea    0x40e(%rip),%rsi        # 0x15a0
+   0x0000000000001192 <+263>:   mov    %rax,%rdi
+   0x0000000000001195 <+266>:   callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x000000000000119a <+271>:   mov    %rax,%rdx
+   0x000000000000119d <+274>:   mov    0x200ec5(%rip),%eax        # 0x202068 <num3>
+   0x00000000000011a3 <+280>:   mov    %eax,%esi
+   0x00000000000011a5 <+282>:   mov    %rdx,%rdi
+   0x00000000000011a8 <+285>:   callq  0xd00 <_ZNSolsEi@plt>
+   0x00000000000011ad <+290>:   mov    %rax,%rdx
+   0x00000000000011b0 <+293>:   mov    0x200e19(%rip),%rax        # 0x201fd0
+   0x00000000000011b7 <+300>:   mov    %rax,%rsi
+   0x00000000000011ba <+303>:   mov    %rdx,%rdi
+   0x00000000000011bd <+306>:   callq  0xca0 <_ZNSolsEPFRSoS_E@plt>
+   0x00000000000011c2 <+311>:   lea    0x3f1(%rip),%rsi        # 0x15ba
+   0x00000000000011c9 <+318>:   lea    0x200ed0(%rip),%rdi        # 0x2020a0 <_ZSt4cout@@GLIBCXX_3.4>
+   0x00000000000011d0 <+325>:   callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x00000000000011d5 <+330>:   lea    0x200e64(%rip),%rsi        # 0x202040 <name4>
+   0x00000000000011dc <+337>:   mov    %rax,%rdi
+   0x00000000000011df <+340>:   callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x00000000000011e4 <+345>:   lea    0x3b5(%rip),%rsi        # 0x15a0
+   0x00000000000011eb <+352>:   mov    %rax,%rdi
+   0x00000000000011ee <+355>:   callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x00000000000011f3 <+360>:   mov    %rax,%rdx
+   0x00000000000011f6 <+363>:   mov    0x200e70(%rip),%eax        # 0x20206c <num4>
+   0x00000000000011fc <+369>:   mov    %eax,%esi
+   0x00000000000011fe <+371>:   mov    %rdx,%rdi
+   0x0000000000001201 <+374>:   callq  0xd00 <_ZNSolsEi@plt>
+   0x0000000000001206 <+379>:   mov    %rax,%rdx
+   0x0000000000001209 <+382>:   mov    0x200dc0(%rip),%rax        # 0x201fd0
+   0x0000000000001210 <+389>:   mov    %rax,%rsi
+   0x0000000000001213 <+392>:   mov    %rdx,%rdi
+   0x0000000000001216 <+395>:   callq  0xca0 <_ZNSolsEPFRSoS_E@plt>
+   0x000000000000121b <+400>:   lea    0x39c(%rip),%rsi        # 0x15be
+   0x0000000000001222 <+407>:   lea    0x200e77(%rip),%rdi        # 0x2020a0 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000001229 <+414>:   callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x000000000000122e <+419>:   lea    0x200e1b(%rip),%rsi        # 0x202050 <name5>
+   0x0000000000001235 <+426>:   mov    %rax,%rdi
+   0x0000000000001238 <+429>:   callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x000000000000123d <+434>:   lea    0x35c(%rip),%rsi        # 0x15a0
+   0x0000000000001244 <+441>:   mov    %rax,%rdi
+   0x0000000000001247 <+444>:   callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x000000000000124c <+449>:   mov    %rax,%rdx
+   0x000000000000124f <+452>:   mov    0x200e1b(%rip),%eax        # 0x202070 <num5>
+   0x0000000000001255 <+458>:   mov    %eax,%esi
+   0x0000000000001257 <+460>:   mov    %rdx,%rdi
+   0x000000000000125a <+463>:   callq  0xd00 <_ZNSolsEi@plt>
+   0x000000000000125f <+468>:   mov    %rax,%rdx
+   0x0000000000001262 <+471>:   mov    0x200d67(%rip),%rax        # 0x201fd0
+   0x0000000000001269 <+478>:   mov    %rax,%rsi
+   0x000000000000126c <+481>:   mov    %rdx,%rdi
+   0x000000000000126f <+484>:   callq  0xca0 <_ZNSolsEPFRSoS_E@plt>
+   0x0000000000001274 <+489>:   nop
+   0x0000000000001275 <+490>:   pop    %rbp
+   0x0000000000001276 <+491>:   retq   
+End of assembler dump.

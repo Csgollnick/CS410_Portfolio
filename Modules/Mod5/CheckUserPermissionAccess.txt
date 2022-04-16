@@ -1,0 +1,70 @@
+   0x0000000000000f6a <+0>:     push   %rbp
+   0x0000000000000f6b <+1>:     mov    %rsp,%rbp
+   0x0000000000000f6e <+4>:     push   %rbx
+   0x0000000000000f6f <+5>:     sub    $0x48,%rsp
+   0x0000000000000f73 <+9>:     mov    %fs:0x28,%rax
+   0x0000000000000f7c <+18>:    mov    %rax,-0x18(%rbp)
+   0x0000000000000f80 <+22>:    xor    %eax,%eax
+   0x0000000000000f82 <+24>:    lea    -0x45(%rbp),%rax
+   0x0000000000000f86 <+28>:    mov    %rax,%rdi
+   0x0000000000000f89 <+31>:    callq  0xd20 <_ZNSaIcEC1Ev@plt>
+   0x0000000000000f8e <+36>:    lea    -0x45(%rbp),%rdx
+   0x0000000000000f92 <+40>:    lea    -0x40(%rbp),%rax
+   0x0000000000000f96 <+44>:    lea    0x588(%rip),%rsi        # 0x1525
+   0x0000000000000f9d <+51>:    mov    %rax,%rdi
+   0x0000000000000fa0 <+54>:    callq  0xce0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EPKcRKS3_@plt>
+   0x0000000000000fa5 <+59>:    lea    -0x45(%rbp),%rax
+   0x0000000000000fa9 <+63>:    mov    %rax,%rdi
+   0x0000000000000fac <+66>:    callq  0xcb0 <_ZNSaIcED1Ev@plt>
+   0x0000000000000fb1 <+71>:    movl   $0x0,-0x44(%rbp)
+   0x0000000000000fb8 <+78>:    lea    0x567(%rip),%rsi        # 0x1526
+   0x0000000000000fbf <+85>:    lea    0x2010da(%rip),%rdi        # 0x2020a0 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000fc6 <+92>:    callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000fcb <+97>:    lea    0x20130e(%rip),%rsi        # 0x2022e0 <username>
+   0x0000000000000fd2 <+104>:   lea    0x2011e7(%rip),%rdi        # 0x2021c0 <_ZSt3cin@@GLIBCXX_3.4>
+   0x0000000000000fd9 <+111>:   callq  0xc40 <_ZStrsIcSt11char_traitsIcEERSt13basic_istreamIT_T0_ES6_PS3_@plt>
+   0x0000000000000fde <+116>:   lea    0x558(%rip),%rsi        # 0x153d
+   0x0000000000000fe5 <+123>:   lea    0x2010b4(%rip),%rdi        # 0x2020a0 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000fec <+130>:   callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000ff1 <+135>:   lea    -0x40(%rbp),%rax
+   0x0000000000000ff5 <+139>:   mov    %rax,%rsi
+   0x0000000000000ff8 <+142>:   lea    0x2011c1(%rip),%rdi        # 0x2021c0 <_ZSt3cin@@GLIBCXX_3.4>
+   0x0000000000000fff <+149>:   callq  0xcd0 <_ZStrsIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EE@plt>
+   0x0000000000001004 <+154>:   lea    -0x40(%rbp),%rax
+   0x0000000000001008 <+158>:   lea    0x545(%rip),%rsi        # 0x1554
+   0x000000000000100f <+165>:   mov    %rax,%rdi
+   0x0000000000001012 <+168>:   callq  0xc50 <_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7compareEPKc@plt>
+   0x0000000000001017 <+173>:   mov    %eax,-0x44(%rbp)
+   0x000000000000101a <+176>:   cmpl   $0x0,-0x44(%rbp)
+   0x000000000000101e <+180>:   jne    0x1027 <_Z25CheckUserPermissionAccessv+189>
+   0x0000000000001020 <+182>:   mov    $0x1,%ebx
+   0x0000000000001025 <+187>:   jmp    0x102c <_Z25CheckUserPermissionAccessv+194>
+   0x0000000000001027 <+189>:   mov    $0x2,%ebx
+   0x000000000000102c <+194>:   lea    -0x40(%rbp),%rax
+   0x0000000000001030 <+198>:   mov    %rax,%rdi
+   0x0000000000001033 <+201>:   callq  0xc70 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+   0x0000000000001038 <+206>:   mov    %ebx,%eax
+   0x000000000000103a <+208>:   mov    -0x18(%rbp),%rcx
+   0x000000000000103e <+212>:   xor    %fs:0x28,%rcx
+   0x0000000000001047 <+221>:   je     0x1084 <_Z25CheckUserPermissionAccessv+282>
+   0x0000000000001049 <+223>:   jmp    0x107f <_Z25CheckUserPermissionAccessv+277>
+   0x000000000000104b <+225>:   mov    %rax,%rbx
+   0x000000000000104e <+228>:   lea    -0x45(%rbp),%rax
+   0x0000000000001052 <+232>:   mov    %rax,%rdi
+   0x0000000000001055 <+235>:   callq  0xcb0 <_ZNSaIcED1Ev@plt>
+   0x000000000000105a <+240>:   mov    %rbx,%rax
+   0x000000000000105d <+243>:   mov    %rax,%rdi
+   0x0000000000001060 <+246>:   callq  0xd10 <_Unwind_Resume@plt>
+   0x0000000000001065 <+251>:   mov    %rax,%rbx
+   0x0000000000001068 <+254>:   lea    -0x40(%rbp),%rax
+   0x000000000000106c <+258>:   mov    %rax,%rdi
+   0x000000000000106f <+261>:   callq  0xc70 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+   0x0000000000001074 <+266>:   mov    %rbx,%rax
+   0x0000000000001077 <+269>:   mov    %rax,%rdi
+   0x000000000000107a <+272>:   callq  0xd10 <_Unwind_Resume@plt>
+   0x000000000000107f <+277>:   callq  0xcc0 <__stack_chk_fail@plt>
+   0x0000000000001084 <+282>:   add    $0x48,%rsp
+   0x0000000000001088 <+286>:   pop    %rbx
+   0x0000000000001089 <+287>:   pop    %rbp
+   0x000000000000108a <+288>:   retq   
+End of assembler dump.

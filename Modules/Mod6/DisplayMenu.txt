@@ -1,0 +1,25 @@
+Dump of assembler code for function _Z11DisplayMenuv:
+   0x00000000000009fa <+0>:     push   %rbp
+   0x00000000000009fb <+1>:     mov    %rsp,%rbp
+   0x00000000000009fe <+4>:     lea    0x400(%rip),%rsi        # 0xe05
+   0x0000000000000a05 <+11>:    lea    0x201614(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000a0c <+18>:    callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000a11 <+23>:    lea    0x3fe(%rip),%rsi        # 0xe16
+   0x0000000000000a18 <+30>:    lea    0x201601(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000a1f <+37>:    callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000a24 <+42>:    lea    0x3f5(%rip),%rsi        # 0xe20
+   0x0000000000000a2b <+49>:    lea    0x2015ee(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000a32 <+56>:    callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000a37 <+61>:    lea    0x3f1(%rip),%rsi        # 0xe2f
+   0x0000000000000a3e <+68>:    lea    0x2015db(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000a45 <+75>:    callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000a4a <+80>:    lea    0x3ed(%rip),%rsi        # 0xe3e
+   0x0000000000000a51 <+87>:    lea    0x2015c8(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000a58 <+94>:    callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000a5d <+99>:    lea    0x3a1(%rip),%rsi        # 0xe05
+   0x0000000000000a64 <+106>:   lea    0x2015b5(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000a6b <+113>:   callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000a70 <+118>:   nop
+   0x0000000000000a71 <+119>:   pop    %rbp
+   0x0000000000000a72 <+120>:   retq   
+End of assembler dump.

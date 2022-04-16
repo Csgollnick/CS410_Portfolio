@@ -1,0 +1,191 @@
+   0x0000000000000a73 <+0>:     push   %rbp
+   0x0000000000000a74 <+1>:     mov    %rsp,%rbp
+   0x0000000000000a77 <+4>:     sub    $0x20,%rsp
+   0x0000000000000a7b <+8>:     mov    %fs:0x28,%rax
+   0x0000000000000a84 <+17>:    mov    %rax,-0x8(%rbp)
+   0x0000000000000a88 <+21>:    xor    %eax,%eax
+   0x0000000000000a8a <+23>:    movl   $0x0,-0x14(%rbp)
+   0x0000000000000a91 <+30>:    mov    -0x14(%rbp),%eax
+
+{While loop.  If 5 go to 655}
+   0x0000000000000a94 <+33>:    cmp    $0x5,%eax
+   0x0000000000000a97 <+36>:    je     0xd02 <main+655>
+
+{Prints menu}
+   0x0000000000000a9d <+42>:    lea    0x3a5(%rip),%rsi        # 0xe49
+   0x0000000000000aa4 <+49>:    lea    0x201575(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000aab <+56>:    callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000ab0 <+61>:    lea    0x3a4(%rip),%rsi        # 0xe5b
+   0x0000000000000ab7 <+68>:    lea    0x201562(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000abe <+75>:    callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000ac3 <+80>:    lea    0x39c(%rip),%rsi        # 0xe66
+   0x0000000000000aca <+87>:    lea    0x20154f(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000ad1 <+94>:    callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000ad6 <+99>:    lea    0x399(%rip),%rsi        # 0xe76
+   0x0000000000000add <+106>:   lea    0x20153c(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000ae4 <+113>:   callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000ae9 <+118>:   lea    0x396(%rip),%rsi        # 0xe86
+   0x0000000000000af0 <+125>:   lea    0x201529(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000af7 <+132>:   callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000afc <+137>:   lea    0x346(%rip),%rsi        # 0xe49
+   0x0000000000000b03 <+144>:   lea    0x201516(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000b0a <+151>:   callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+
+{Accepts input for menu choice}
+   0x0000000000000b0f <+156>:   lea    -0x14(%rbp),%rax
+   0x0000000000000b13 <+160>:   mov    %rax,%rsi
+   0x0000000000000b16 <+163>:   lea    0x201623(%rip),%rdi        # 0x202140 <_ZSt3cin@@GLIBCXX_3.4>
+   0x0000000000000b1d <+170>:   callq  0x870 <_ZNSirsERi@plt>
+
+{compares choice to 1(add)}
+   0x0000000000000b22 <+175>:   mov    -0x14(%rbp),%eax
+   0x0000000000000b25 <+178>:   cmp    $0x1,%eax
+   0x0000000000000b28 <+181>:   jne    0xbc3 <main+336>
+   0x0000000000000b2e <+187>:   lea    -0x10(%rbp),%rax
+   0x0000000000000b32 <+191>:   mov    %rax,%rsi
+{Accept Input of 1st int}
+   0x0000000000000b35 <+194>:   lea    0x201604(%rip),%rdi        # 0x202140 <_ZSt3cin@@GLIBCXX_3.4>
+   0x0000000000000b3c <+201>:   callq  0x870 <_ZNSirsERi@plt>
+   0x0000000000000b41 <+206>:   mov    %rax,%rdx
+   0x0000000000000b44 <+209>:   lea    -0xc(%rbp),%rax
+   0x0000000000000b48 <+213>:   mov    %rax,%rsi
+   0x0000000000000b4b <+216>:   mov    %rdx,%rdi
+{accept input of second int}
+   0x0000000000000b4e <+219>:   callq  0x870 <_ZNSirsERi@plt>
+   0x0000000000000b53 <+224>:   mov    -0x10(%rbp),%eax
+   0x0000000000000b56 <+227>:   mov    %eax,%esi
+{print statement call}
+   0x0000000000000b58 <+229>:   lea    0x2014c1(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000b5f <+236>:   callq  0x8d0 <_ZNSolsEi@plt>
+   0x0000000000000b64 <+241>:   lea    0x327(%rip),%rsi        # 0xe92
+   0x0000000000000b6b <+248>:   mov    %rax,%rdi
+   0x0000000000000b6e <+251>:   callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000b73 <+256>:   mov    %rax,%rdx
+   0x0000000000000b76 <+259>:   mov    -0xc(%rbp),%eax
+   0x0000000000000b79 <+262>:   mov    %eax,%esi
+   0x0000000000000b7b <+264>:   mov    %rdx,%rdi
+{print statement call}
+   0x0000000000000b7e <+267>:   callq  0x8d0 <_ZNSolsEi@plt>
+   0x0000000000000b83 <+272>:   lea    0x30c(%rip),%rsi        # 0xe96
+   0x0000000000000b8a <+279>:   mov    %rax,%rdi
+   0x0000000000000b8d <+282>:   callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+{Performs subtraction of entered values}
+   0x0000000000000b92 <+287>:   mov    %rax,%rcx
+   0x0000000000000b95 <+290>:   mov    -0x10(%rbp),%edx
+   0x0000000000000b98 <+293>:   mov    -0xc(%rbp),%eax
+   0x0000000000000b9b <+296>:   sub    %eax,%edx
+   0x0000000000000b9d <+298>:   mov    %edx,%eax
+   0x0000000000000b9f <+300>:   mov    %eax,%esi
+   0x0000000000000ba1 <+302>:   mov    %rcx,%rdi
+{Prints output of calculation}
+   0x0000000000000ba4 <+305>:   callq  0x8d0 <_ZNSolsEi@plt>
+   0x0000000000000ba9 <+310>:   mov    %rax,%rdx
+   0x0000000000000bac <+313>:   mov    0x20141d(%rip),%rax        # 0x201fd0
+   0x0000000000000bb3 <+320>:   mov    %rax,%rsi
+   0x0000000000000bb6 <+323>:   mov    %rdx,%rdi
+   0x0000000000000bb9 <+326>:   callq  0x8a0 <_ZNSolsEPFRSoS_E@plt>
+{Returns to menu}
+   0x0000000000000bbe <+331>:   jmpq   0xa91 <main+30>
+
+{Compares choice to 2 (sub)}
+   0x0000000000000bc3 <+336>:   mov    -0x14(%rbp),%eax
+   0x0000000000000bc6 <+339>:   cmp    $0x2,%eax
+   0x0000000000000bc9 <+342>:   jne    0xc62 <main+495>
+   0x0000000000000bcf <+348>:   lea    -0x10(%rbp),%rax
+   0x0000000000000bd3 <+352>:   mov    %rax,%rsi
+{Accept integer input}
+   0x0000000000000bd6 <+355>:   lea    0x201563(%rip),%rdi        # 0x202140 <_ZSt3cin@@GLIBCXX_3.4>
+   0x0000000000000bdd <+362>:   callq  0x870 <_ZNSirsERi@plt>
+   0x0000000000000be2 <+367>:   mov    %rax,%rdx
+   0x0000000000000be5 <+370>:   lea    -0xc(%rbp),%rax
+   0x0000000000000be9 <+374>:   mov    %rax,%rsi
+   0x0000000000000bec <+377>:   mov    %rdx,%rdi
+{accept integer input}
+   0x0000000000000bef <+380>:   callq  0x870 <_ZNSirsERi@plt>
+   0x0000000000000bf4 <+385>:   mov    -0x10(%rbp),%eax
+   0x0000000000000bf7 <+388>:   mov    %eax,%esi
+{Print out statement}
+   0x0000000000000bf9 <+390>:   lea    0x201420(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000c00 <+397>:   callq  0x8d0 <_ZNSolsEi@plt>
+   0x0000000000000c05 <+402>:   lea    0x286(%rip),%rsi        # 0xe92
+   0x0000000000000c0c <+409>:   mov    %rax,%rdi
+   0x0000000000000c0f <+412>:   callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000c14 <+417>:   mov    %rax,%rdx
+   0x0000000000000c17 <+420>:   mov    -0xc(%rbp),%eax
+   0x0000000000000c1a <+423>:   mov    %eax,%esi
+   0x0000000000000c1c <+425>:   mov    %rdx,%rdi
+   0x0000000000000c1f <+428>:   callq  0x8d0 <_ZNSolsEi@plt>
+   0x0000000000000c24 <+433>:   lea    0x26b(%rip),%rsi        # 0xe96
+   0x0000000000000c2b <+440>:   mov    %rax,%rdi
+   0x0000000000000c2e <+443>:   callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+{adds the inputss and prints the answer}
+   0x0000000000000c33 <+448>:   mov    %rax,%rcx
+   0x0000000000000c36 <+451>:   mov    -0x10(%rbp),%edx
+   0x0000000000000c39 <+454>:   mov    -0xc(%rbp),%eax
+   0x0000000000000c3c <+457>:   add    %edx,%eax
+   0x0000000000000c3e <+459>:   mov    %eax,%esi
+   0x0000000000000c40 <+461>:   mov    %rcx,%rdi
+   0x0000000000000c43 <+464>:   callq  0x8d0 <_ZNSolsEi@plt>
+   0x0000000000000c48 <+469>:   mov    %rax,%rdx
+   0x0000000000000c4b <+472>:   mov    0x20137e(%rip),%rax        # 0x201fd0
+   0x0000000000000c52 <+479>:   mov    %rax,%rsi
+   0x0000000000000c55 <+482>:   mov    %rdx,%rdi
+   0x0000000000000c58 <+485>:   callq  0x8a0 <_ZNSolsEPFRSoS_E@plt>
+{return to menu}
+   0x0000000000000c5d <+490>:   jmpq   0xa91 <main+30>
+
+{Comapre to 3 for cchoice, Mult)}
+   0x0000000000000c62 <+495>:   mov    -0x14(%rbp),%eax
+   0x0000000000000c65 <+498>:   cmp    $0x3,%eax
+   0x0000000000000c68 <+501>:   jne    0xa91 <main+30>
+   0x0000000000000c6e <+507>:   lea    -0x10(%rbp),%rax
+   0x0000000000000c72 <+511>:   mov    %rax,%rsi
+{Accept user input for number}
+   0x0000000000000c75 <+514>:   lea    0x2014c4(%rip),%rdi        # 0x202140 <_ZSt3cin@@GLIBCXX_3.4>
+   0x0000000000000c7c <+521>:   callq  0x870 <_ZNSirsERi@plt>
+   0x0000000000000c81 <+526>:   mov    %rax,%rdx
+   0x0000000000000c84 <+529>:   lea    -0xc(%rbp),%rax
+   0x0000000000000c88 <+533>:   mov    %rax,%rsi
+   0x0000000000000c8b <+536>:   mov    %rdx,%rdi
+{Accept second number input}
+   0x0000000000000c8e <+539>:   callq  0x870 <_ZNSirsERi@plt>
+   0x0000000000000c93 <+544>:   mov    -0x10(%rbp),%eax
+   0x0000000000000c96 <+547>:   mov    %eax,%esi
+   0x0000000000000c98 <+549>:   lea    0x201381(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000c9f <+556>:   callq  0x8d0 <_ZNSolsEi@plt>
+   0x0000000000000ca4 <+561>:   lea    0x1e7(%rip),%rsi        # 0xe92
+   0x0000000000000cab <+568>:   mov    %rax,%rdi
+   0x0000000000000cae <+571>:   callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000cb3 <+576>:   mov    %rax,%rdx
+   0x0000000000000cb6 <+579>:   mov    -0xc(%rbp),%eax
+   0x0000000000000cb9 <+582>:   mov    %eax,%esi
+   0x0000000000000cbb <+584>:   mov    %rdx,%rdi
+   0x0000000000000cbe <+587>:   callq  0x8d0 <_ZNSolsEi@plt>
+   0x0000000000000cc3 <+592>:   lea    0x1cc(%rip),%rsi        # 0xe96
+   0x0000000000000cca <+599>:   mov    %rax,%rdi
+   0x0000000000000ccd <+602>:   callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+{Performs Division of two numbers and prints results   
+   0x0000000000000cd2 <+607>:   mov    %rax,%rcx
+   0x0000000000000cd5 <+610>:   mov    -0x10(%rbp),%eax
+   0x0000000000000cd8 <+613>:   mov    -0xc(%rbp),%esi
+   0x0000000000000cdb <+616>:   cltd   
+   0x0000000000000cdc <+617>:   idiv   %esi
+   0x0000000000000cde <+619>:   mov    %eax,%esi
+   0x0000000000000ce0 <+621>:   mov    %rcx,%rdi
+   0x0000000000000ce3 <+624>:   callq  0x8d0 <_ZNSolsEi@plt>
+   0x0000000000000ce8 <+629>:   mov    %rax,%rdx
+   0x0000000000000ceb <+632>:   mov    0x2012de(%rip),%rax        # 0x201fd0
+   0x0000000000000cf2 <+639>:   mov    %rax,%rsi
+   0x0000000000000cf5 <+642>:   mov    %rdx,%rdi
+   0x0000000000000cf8 <+645>:   callq  0x8a0 <_ZNSolsEPFRSoS_E@plt>
+   0x0000000000000cfd <+650>:   jmpq   0xa91 <main+30>
+  
+{Exit Program}
+   0x0000000000000d02 <+655>:   mov    $0x0,%eax
+   0x0000000000000d07 <+660>:   mov    -0x8(%rbp),%rcx
+   0x0000000000000d0b <+664>:   xor    %fs:0x28,%rcx
+   0x0000000000000d14 <+673>:   je     0xd1b <main+680>
+   0x0000000000000d16 <+675>:   callq  0x8b0 <__stack_chk_fail@plt>
+   0x0000000000000d1b <+680>:   leaveq 
+   0x0000000000000d1c <+681>:   retq   
+End of assembler dump.

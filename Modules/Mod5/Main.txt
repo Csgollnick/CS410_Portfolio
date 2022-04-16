@@ -1,0 +1,65 @@
+Dump of assembler code for function main:
+   0x0000000000000e4a <+0>:     push   %rbp
+   0x0000000000000e4b <+1>:     mov    %rsp,%rbp
+
+   0x0000000000000e4e <+4>:     lea    0x5eb(%rip),%rsi        # 0x1440
+   0x0000000000000e55 <+11>:    lea    0x201244(%rip),%rdi        # 0x2020a0 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000e5c <+18>:    callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000e61 <+23>:    callq  0xf6a <_Z25CheckUserPermissionAccessv>
+
+   0x0000000000000e66 <+28>:    mov    %eax,0x201494(%rip)        # 0x202300 <answer>
+   0x0000000000000e6c <+34>:    mov    0x20148e(%rip),%eax        # 0x202300 <answer>
+
+   0x0000000000000e72 <+40>:    cmp    $0x1,%eax
+   0x0000000000000e75 <+43>:    je     0xe8a <main+64>
+   0x0000000000000e77 <+45>:    lea    0x5f2(%rip),%rsi        # 0x1470
+   0x0000000000000e7e <+52>:    lea    0x20121b(%rip),%rdi        # 0x2020a0 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000e85 <+59>:    callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000e8a <+64>:    mov    0x201470(%rip),%eax        # 0x202300 <answer>
+   0x0000000000000e90 <+70>:    cmp    $0x1,%eax
+   0x0000000000000e93 <+73>:    je     0xe97 <main+77>
+   0x0000000000000e95 <+75>:    jmp    0xe61 <main+23>
+   0x0000000000000e97 <+77>:    lea    0x5f6(%rip),%rsi        # 0x1494
+   0x0000000000000e9e <+84>:    lea    0x2011fb(%rip),%rdi        # 0x2020a0 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000ea5 <+91>:    callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000eaa <+96>:    lea    0x5ff(%rip),%rsi        # 0x14b0
+   0x0000000000000eb1 <+103>:   lea    0x2011e8(%rip),%rdi        # 0x2020a0 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000eb8 <+110>:   callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000ebd <+115>:   lea    0x614(%rip),%rsi        # 0x14d8
+   0x0000000000000ec4 <+122>:   lea    0x2011d5(%rip),%rdi        # 0x2020a0 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000ecb <+129>:   callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000ed0 <+134>:   lea    0x625(%rip),%rsi        # 0x14fc
+   0x0000000000000ed7 <+141>:   lea    0x2011c2(%rip),%rdi        # 0x2020a0 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000ede <+148>:   callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000ee3 <+153>:   lea    0x20140a(%rip),%rsi        # 0x2022f4 <choice>
+   0x0000000000000eea <+160>:   lea    0x2012cf(%rip),%rdi        # 0x2021c0 <_ZSt3cin@@GLIBCXX_3.4>
+   0x0000000000000ef1 <+167>:   callq  0xc60 <_ZNSirsERi@plt>
+   0x0000000000000ef6 <+172>:   lea    0x61d(%rip),%rsi        # 0x151a
+   0x0000000000000efd <+179>:   lea    0x20119c(%rip),%rdi        # 0x2020a0 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000f04 <+186>:   callq  0xc90 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000f09 <+191>:   mov    %rax,%rdx
+   0x0000000000000f0c <+194>:   mov    0x2013e2(%rip),%eax        # 0x2022f4 <choice>
+   0x0000000000000f12 <+200>:   mov    %eax,%esi
+   0x0000000000000f14 <+202>:   mov    %rdx,%rdi
+   0x0000000000000f17 <+205>:   callq  0xd00 <_ZNSolsEi@plt>
+   0x0000000000000f1c <+210>:   mov    %rax,%rdx
+   0x0000000000000f1f <+213>:   mov    0x2010aa(%rip),%rax        # 0x201fd0
+   0x0000000000000f26 <+220>:   mov    %rax,%rsi
+   0x0000000000000f29 <+223>:   mov    %rdx,%rdi
+   0x0000000000000f2c <+226>:   callq  0xca0 <_ZNSolsEPFRSoS_E@plt>
+   0x0000000000000f31 <+231>:   mov    0x2013bd(%rip),%eax        # 0x2022f4 <choice>
+   0x0000000000000f37 <+237>:   cmp    $0x1,%eax
+   0x0000000000000f3a <+240>:   jne    0xf43 <main+249>
+   0x0000000000000f3c <+242>:   callq  0x108b <_Z11DisplayInfov>
+   0x0000000000000f41 <+247>:   jmp    0xf53 <main+265>
+   0x0000000000000f43 <+249>:   mov    0x2013ab(%rip),%eax        # 0x2022f4 <choice>
+   0x0000000000000f49 <+255>:   cmp    $0x2,%eax
+   0x0000000000000f4c <+258>:   jne    0xf53 <main+265>
+   0x0000000000000f4e <+260>:   callq  0x1277 <_Z20ChangeCustomerChoicev>
+   0x0000000000000f53 <+265>:   mov    0x20139b(%rip),%eax        # 0x2022f4 <choice>
+   0x0000000000000f59 <+271>:   cmp    $0x3,%eax
+   0x0000000000000f5c <+274>:   je     0xf63 <main+281>
+   0x0000000000000f5e <+276>:   jmpq   0xe97 <main+77>
+   0x0000000000000f63 <+281>:   mov    $0x0,%eax
+   0x0000000000000f68 <+286>:   pop    %rbp
+   0x0000000000000f69 <+287>:   retq   
