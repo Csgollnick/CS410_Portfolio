@@ -1,0 +1,66 @@
+   0x00000000000009fa <+0>:     push   %rbp
+   0x00000000000009fb <+1>:     mov    %rsp,%rbp
+   0x00000000000009fe <+4>:     sub    $0x30,%rsp
+
+   0x0000000000000a02 <+8>:     mov    %fs:0x28,%rax
+   0x0000000000000a0b <+17>:    mov    %rax,-0x8(%rbp)
+   0x0000000000000a0f <+21>:    xor    %eax,%eax
+
+   0x0000000000000a11 <+23>:    lea    0x191(%rip),%rsi        # 0xba9
+   0x0000000000000a18 <+30>:    lea    0x201601(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000a1f <+37>:    callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000a24 <+42>:    mov    %rax,%rdx
+   0x0000000000000a27 <+45>:    mov    0x2015a2(%rip),%rax        # 0x201fd0
+   0x0000000000000a2e <+52>:    mov    %rax,%rsi
+   0x0000000000000a31 <+55>:    mov    %rdx,%rdi
+   0x0000000000000a34 <+58>:    callq  0x8a0 <_ZNSolsEPFRSoS_E@plt>
+
+   0x0000000000000a39 <+63>:    lea    -0x14(%rbp),%rax
+   0x0000000000000a3d <+67>:    mov    %rax,%rsi
+   0x0000000000000a40 <+70>:    lea    0x2016f9(%rip),%rdi        # 0x202140 <_ZSt3cin@@GLIBCXX_3.4>
+   0x0000000000000a47 <+77>:    callq  0x870 <_ZNSirsERi@plt>
+
+   0x0000000000000a4c <+82>:    mov    -0x14(%rbp),%edx
+   0x0000000000000a4f <+85>:    mov    -0x14(%rbp),%eax
+   0x0000000000000a52 <+88>:    imul   %eax,%edx
+   0x0000000000000a55 <+91>:    mov    -0x14(%rbp),%eax
+   0x0000000000000a58 <+94>:    imul   %edx,%eax
+   0x0000000000000a5b <+97>:    mov    %eax,-0x14(%rbp)
+   0x0000000000000a5e <+100>:   mov    -0x14(%rbp),%eax
+   0x0000000000000a61 <+103>:   cvtsi2sd %eax,%xmm0
+   0x0000000000000a65 <+107>:   movsd  0x15b(%rip),%xmm1        # 0xbc8
+   0x0000000000000a6d <+115>:   mulsd  %xmm1,%xmm0
+   0x0000000000000a71 <+119>:   movsd  %xmm0,-0x10(%rbp)
+
+   0x0000000000000a76 <+124>:   lea    0x13a(%rip),%rsi        # 0xbb7
+   0x0000000000000a7d <+131>:   lea    0x20159c(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000a84 <+138>:   callq  0x890 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000a89 <+143>:   mov    %rax,%rdx
+   0x0000000000000a8c <+146>:   mov    -0x10(%rbp),%rax
+   0x0000000000000a90 <+150>:   mov    %rax,-0x28(%rbp)
+   0x0000000000000a94 <+154>:   movsd  -0x28(%rbp),%xmm0
+   0x0000000000000a99 <+159>:   mov    %rdx,%rdi
+   0x0000000000000a9c <+162>:   callq  0x8d0 <_ZNSolsEd@plt>
+
+   0x0000000000000aa1 <+167>:   mov    $0x0,%eax
+   0x0000000000000aa6 <+172>:   mov    -0x8(%rbp),%rcx
+   0x0000000000000aaa <+176>:   xor    %fs:0x28,%rcx
+   0x0000000000000ab3 <+185>:   je     0xaba <main+192>
+   0x0000000000000ab5 <+187>:   callq  0x8b0 <__stack_chk_fail@plt>
+
+   0x0000000000000aba <+192>:   leaveq 
+   0x0000000000000abb <+193>:   retq  
+
+
+int main() {
+	int x;
+	double volume;
+	double height;
+	cout << "Enter Radius:"<< endl;
+	cin << x<<endl;
+	height = radius;
+	volume = pi * (r *r) * h
+	cout << "The volume is: << volume;
+	return 0;
+
+}

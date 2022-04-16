@@ -1,0 +1,67 @@
+
+   0x000000000000090a <+0>:     push   %rbp
+   0x000000000000090b <+1>:     mov    %rsp,%rbp
+   0x000000000000090e <+4>:     sub    $0x10,%rsp
+
+   0x0000000000000912 <+8>:     movl   $0x1,-0x8(%rbp)
+   0x0000000000000919 <+15>:    cmpl   $0x9,-0x8(%rbp)
+   0x000000000000091d <+19>:    jg     0x9ad <main+163>
+   0x0000000000000923 <+25>:    movl   $0x1,-0xc(%rbp)
+   0x000000000000092a <+32>:    cmpl   $0x9,-0xc(%rbp)
+   0x000000000000092e <+36>:    jg     0x9a4 <main+154>
+   0x0000000000000930 <+38>:    mov    -0x8(%rbp),%eax
+   0x0000000000000933 <+41>:    imul   -0xc(%rbp),%eax
+   0x0000000000000937 <+45>:    mov    %eax,-0x4(%rbp)
+   0x000000000000093a <+48>:    mov    -0x8(%rbp),%eax
+   0x000000000000093d <+51>:    mov    %eax,%esi
+
+   0x000000000000093f <+53>:    lea    0x2006da(%rip),%rdi        # 0x201020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000946 <+60>:    callq  0x7e0 <_ZNSolsEi@plt>
+   0x000000000000094b <+65>:    lea    0x153(%rip),%rsi        # 0xaa5
+   0x0000000000000952 <+72>:    mov    %rax,%rdi
+   0x0000000000000955 <+75>:    callq  0x7b0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x000000000000095a <+80>:    mov    %rax,%rdx
+   0x000000000000095d <+83>:    mov    -0xc(%rbp),%eax
+   0x0000000000000960 <+86>:    mov    %eax,%esi
+   0x0000000000000962 <+88>:    mov    %rdx,%rdi
+   0x0000000000000965 <+91>:    callq  0x7e0 <_ZNSolsEi@plt>
+   0x000000000000096a <+96>:    lea    0x138(%rip),%rsi        # 0xaa9
+   0x0000000000000971 <+103>:   mov    %rax,%rdi
+   0x0000000000000974 <+106>:   callq  0x7b0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000979 <+111>:   mov    %rax,%rdx
+   0x000000000000097c <+114>:   mov    -0x4(%rbp),%eax
+   0x000000000000097f <+117>:   mov    %eax,%esi
+   0x0000000000000981 <+119>:   mov    %rdx,%rdi
+   0x0000000000000984 <+122>:   callq  0x7e0 <_ZNSolsEi@plt>
+   0x0000000000000989 <+127>:   mov    %rax,%rdx
+   0x000000000000098c <+130>:   mov    0x20063d(%rip),%rax        # 0x200fd0
+   0x0000000000000993 <+137>:   mov    %rax,%rsi
+   0x0000000000000996 <+140>:   mov    %rdx,%rdi
+   0x0000000000000999 <+143>:   callq  0x7c0 <_ZNSolsEPFRSoS_E@plt>
+
+   0x000000000000099e <+148>:   addl   $0x1,-0xc(%rbp)
+   0x00000000000009a2 <+152>:   jmp    0x92a <main+32>
+   0x00000000000009a4 <+154>:   addl   $0x1,-0x8(%rbp)
+   0x00000000000009a8 <+158>:   jmpq   0x919 <main+15>
+
+   0x00000000000009ad <+163>:   mov    $0x0,%eax
+   0x00000000000009b2 <+168>:   leaveq 
+   0x00000000000009b3 <+169>:   retq  
+
+
+#include<iostream>
+using namespace std;
+ 
+int main()
+{
+  int number, i, a, x;
+  
+  for (a = 1; a <= 9; a++)
+    {
+        for (i = 1; i <= 9; i++){ 
+          x = a * i;
+          cout << a << " * " << i << " = " << x << endl;
+        }
+     }
+  return 0;
+}

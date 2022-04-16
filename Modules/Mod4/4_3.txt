@@ -1,0 +1,97 @@
+   0x00000000000009ba <+0>:     push   %rbp
+   0x00000000000009bb <+1>:     mov    %rsp,%rbp
+   0x00000000000009be <+4>:     sub    $0x20,%rsp
+
+   0x00000000000009c2 <+8>:     mov    %fs:0x28,%rax
+   0x00000000000009cb <+17>:    mov    %rax,-0x8(%rbp)
+   0x00000000000009cf <+21>:    xor    %eax,%eax
+   0x00000000000009d1 <+23>:    movl   $0x1,-0xc(%rbp)
+   0x00000000000009d8 <+30>:    lea    0x256(%rip),%rsi        # 0xc35
+   0x00000000000009df <+37>:    lea    0x20163a(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x00000000000009e6 <+44>:    callq  0x860 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x00000000000009eb <+49>:    mov    %rax,%rdx
+   0x00000000000009ee <+52>:    mov    0x2015db(%rip),%rax        # 0x201fd0
+   0x00000000000009f5 <+59>:    mov    %rax,%rsi
+   0x00000000000009f8 <+62>:    mov    %rdx,%rdi
+   0x00000000000009fb <+65>:    callq  0x870 <_ZNSolsEPFRSoS_E@plt>
+   0x0000000000000a00 <+70>:    lea    -0x18(%rbp),%rax
+   0x0000000000000a04 <+74>:    mov    %rax,%rsi
+   0x0000000000000a07 <+77>:    lea    0x201732(%rip),%rdi        # 0x202140 <_ZSt3cin@@GLIBCXX_3.4>
+   0x0000000000000a0e <+84>:    callq  0x840 <_ZNSirsERi@plt>
+   0x0000000000000a13 <+89>:    mov    -0x18(%rbp),%eax
+
+   0x0000000000000a16 <+92>:    sub    $0x1,%eax
+   0x0000000000000a19 <+95>:    mov    %eax,-0xc(%rbp)
+   0x0000000000000a1c <+98>:    movl   $0x1,-0x10(%rbp)
+   0x0000000000000a23 <+105>:   mov    -0x18(%rbp),%eax
+   0x0000000000000a26 <+108>:   cmp    %eax,-0x10(%rbp)
+   0x0000000000000a29 <+111>:   jg     0xa9d <main+227>
+   0x0000000000000a2b <+113>:   movl   $0x1,-0x14(%rbp)
+   0x0000000000000a32 <+120>:   mov    -0x14(%rbp),%eax
+   0x0000000000000a35 <+123>:   cmp    -0xc(%rbp),%eax
+   0x0000000000000a38 <+126>:   jg     0xa53 <main+153>
+
+   0x0000000000000a3a <+128>:   lea    0x209(%rip),%rsi        # 0xc4a
+   0x0000000000000a41 <+135>:   lea    0x2015d8(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000a48 <+142>:   callq  0x860 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000a4d <+147>:   addl   $0x1,-0x14(%rbp)
+   0x0000000000000a51 <+151>:   jmp    0xa32 <main+120>
+   0x0000000000000a53 <+153>:   subl   $0x1,-0xc(%rbp)
+   0x0000000000000a57 <+157>:   movl   $0x1,-0x14(%rbp)
+   0x0000000000000a5e <+164>:   mov    -0x10(%rbp),%eax
+   0x0000000000000a61 <+167>:   add    %eax,%eax
+   0x0000000000000a63 <+169>:   sub    $0x1,%eax
+   0x0000000000000a66 <+172>:   cmp    %eax,-0x14(%rbp)
+   0x0000000000000a69 <+175>:   jg     0xa84 <main+202>
+   0x0000000000000a6b <+177>:   lea    0x1da(%rip),%rsi        # 0xc4c
+   0x0000000000000a72 <+184>:   lea    0x2015a7(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000a79 <+191>:   callq  0x860 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000a7e <+196>:   addl   $0x1,-0x14(%rbp)
+   0x0000000000000a82 <+200>:   jmp    0xa5e <main+164>
+   0x0000000000000a84 <+202>:   lea    0x1c3(%rip),%rsi        # 0xc4e
+   0x0000000000000a8b <+209>:   lea    0x20158e(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000a92 <+216>:   callq  0x860 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000a97 <+221>:   addl   $0x1,-0x10(%rbp)
+   0x0000000000000a9b <+225>:   jmp    0xa23 <main+105>
+   0x0000000000000a9d <+227>:   movl   $0x1,-0xc(%rbp)
+   0x0000000000000aa4 <+234>:   movl   $0x1,-0x10(%rbp)
+   0x0000000000000aab <+241>:   mov    -0x18(%rbp),%eax
+   0x0000000000000aae <+244>:   sub    $0x1,%eax
+   0x0000000000000ab1 <+247>:   cmp    %eax,-0x10(%rbp)
+   0x0000000000000ab4 <+250>:   jg     0xb2b <main+369>
+   0x0000000000000ab6 <+252>:   movl   $0x1,-0x14(%rbp)
+   0x0000000000000abd <+259>:   mov    -0x14(%rbp),%eax
+   0x0000000000000ac0 <+262>:   cmp    -0xc(%rbp),%eax
+   0x0000000000000ac3 <+265>:   jg     0xade <main+292>
+   0x0000000000000ac5 <+267>:   lea    0x17e(%rip),%rsi        # 0xc4a
+   0x0000000000000acc <+274>:   lea    0x20154d(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000ad3 <+281>:   callq  0x860 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000ad8 <+286>:   addl   $0x1,-0x14(%rbp)
+   0x0000000000000adc <+290>:   jmp    0xabd <main+259>
+   0x0000000000000ade <+292>:   addl   $0x1,-0xc(%rbp)
+   0x0000000000000ae2 <+296>:   movl   $0x1,-0x14(%rbp)
+   0x0000000000000ae9 <+303>:   mov    -0x18(%rbp),%eax
+   0x0000000000000aec <+306>:   sub    -0x10(%rbp),%eax
+   0x0000000000000aef <+309>:   add    %eax,%eax
+   0x0000000000000af1 <+311>:   sub    $0x1,%eax
+   0x0000000000000af4 <+314>:   cmp    %eax,-0x14(%rbp)
+   0x0000000000000af7 <+317>:   jg     0xb12 <main+344>
+   0x0000000000000af9 <+319>:   lea    0x14c(%rip),%rsi        # 0xc4c
+   0x0000000000000b00 <+326>:   lea    0x201519(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000b07 <+333>:   callq  0x860 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000b0c <+338>:   addl   $0x1,-0x14(%rbp)
+   0x0000000000000b10 <+342>:   jmp    0xae9 <main+303>
+   0x0000000000000b12 <+344>:   lea    0x135(%rip),%rsi        # 0xc4e
+   0x0000000000000b19 <+351>:   lea    0x201500(%rip),%rdi        # 0x202020 <_ZSt4cout@@GLIBCXX_3.4>
+   0x0000000000000b20 <+358>:   callq  0x860 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000000b25 <+363>:   addl   $0x1,-0x10(%rbp)
+   0x0000000000000b29 <+367>:   jmp    0xaab <main+241>
+   0x0000000000000b2b <+369>:   mov    $0x1,%eax
+   0x0000000000000b30 <+374>:   mov    -0x8(%rbp),%rcx
+   0x0000000000000b34 <+378>:   xor    %fs:0x28,%rcx
+   0x0000000000000b3d <+387>:   je     0xb44 <main+394>
+   0x0000000000000b3f <+389>:   callq  0x880 <__stack_chk_fail@plt>
+   
+   0x0000000000000b44 <+394>:   leaveq 
+   0x0000000000000b45 <+395>:   retq  
+
